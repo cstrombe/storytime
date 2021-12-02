@@ -11,7 +11,8 @@ ALL_QUESTIONS = {
      #..... etc!
      }
 
-
+# Show the next question to the user, and get their answer.
+# Only let them enter one of the specified number choices for the question, or "q" if they want to quit.
 def ask_question(question_info):
      print(question_info["question"])
      print(question_info["answers"])
