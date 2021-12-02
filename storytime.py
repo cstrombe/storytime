@@ -16,7 +16,7 @@ def ask_question(question_info):
      print(question_info["question"])
      print(question_info["answers"])
      answer = None
-     while answer not in question_info["answers"] and answer != "q":
+     while answer not in question_info["answers"].keys() and answer != "q":
           answer = input("? ")
      return answer
 
