@@ -1,6 +1,6 @@
 #!/usr/bin/evn python3
 
-d = {
+ALL_QUESTIONS = {
      "0": {"question": "What do you want to be?", "answers": {"1": "banker", "2": "investor"}},
      # 1 = they chose banker
      "1": {"question": "What bank do you work at?", "answers": {"3": "Wells Fargo", "4": "Bank of America"}},
@@ -26,7 +26,7 @@ def main():
      answer = "0"
 
      while keep_going:
-          answer = ask_question(d[answer])
+          answer = ask_question(ALL_QUESTIONS[answer])
           if answer == "q": # q for "quit"
                keep_going = False
 
